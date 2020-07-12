@@ -18,13 +18,15 @@
         <h2>¿Quieres conocer algunos lugares icónicos de Stgo en el pasado?</h2>
         <h4>Ven y descúbrelos</h4>
       </header>
-      <!-- <section>
-      </section> -->
+      <section>
+        <image-card/>  
+      </section>
     <Footer/>
   </div>
 </template>
 
 <script>
+import ImageCard from '../components/ImageCard'
 import Footer from '../components/Footer'
 
 export default {
@@ -60,6 +62,7 @@ export default {
   },
   name: 'Home',
   components: {
+    ImageCard,
     Footer
   },
 }
