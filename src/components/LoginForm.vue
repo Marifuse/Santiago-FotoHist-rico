@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-app class="cyan darken-1">
+    <v-app class="grey lighten-3">
       <v-card width='400px' class="mx-auto my-auto lighten-5">
         <v-card-title class="pb-0">
         <h1 class="mx-auto mb-5">Autentificación</h1>
@@ -10,21 +10,21 @@
             <v-text-field label='Usuario' 
             prepend-icon='mdi-account-circle'
             v-model="user"
-            color="indigo darken-4"
+            color="grey lighten-1"
             />
             <v-text-field label='Contraseña' :type="showPassword ? 'text' : 'password'"
               prepend-icon='mdi-lock'
               :append-icon="showPassword ? 'mdi-eye' : 'mdi-eye-off'"
               @click:append="showPassword = !showPassword"
               v-model="password"
-              color="indigo darken-4"
+              color="grey lighten-1"
               />
           </v-form>
         </v-card-text>
         <v-divider></v-divider>
         <div class="my-5 text-center">
-          <v-btn class="mx-2" color="cyan" dark to="/home">♪~Volver a Home~♪</v-btn>
-          <v-btn color='indigo' dark @click="login">Login</v-btn>
+          <v-btn class="mx-2" color="black" dark to="/home">╠ Volver a Home ╣</v-btn>
+          <v-btn color='grey' @click="login">╠ Login ╣</v-btn>
         </div>
       </v-card>
     </v-app>

@@ -6,7 +6,7 @@
       dark
     >
 
-      <a href="home" class="nav__a"><v-toolbar-title>Ch ~•~ FH🔍</v-toolbar-title></a>
+      <a href="home" class="nav__a"><v-toolbar-title>»Stgo ~•~ FH«</v-toolbar-title></a>
 
       <v-spacer></v-spacer>
       <v-btn
