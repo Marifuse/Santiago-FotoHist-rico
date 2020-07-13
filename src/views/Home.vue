@@ -67,3 +67,12 @@ export default {
   },
 }
 </script>
+
+<style lang="scss">
+.home__container {
+  background-color: gainsboro;
+}
+.header__container {
+  background-color: #FFF;
+} 
+</style>
