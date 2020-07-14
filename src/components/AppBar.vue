@@ -5,25 +5,54 @@
       color="grey darken-3"
       dark
     >
+      <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
 
       <a href="home" class="nav__a"><v-toolbar-title>»Stgo ~•~ FH«</v-toolbar-title></a>
-
-      <v-spacer></v-spacer>
-      <v-btn
-        text
-        to="/admin"
-      >
-        <span class="mr-1">Admin</span>
-        <v-icon>mdi-account</v-icon> 
-      </v-btn>
-      <v-btn
-        text
-        @click="logout"
-      >
-        <span class="mr-1">{{ !!currentUser ? 'Cerrar Sesión' : 'Iniciar Sesión' }}</span>
-        <v-icon>mdi-lock</v-icon>
-      </v-btn>
     </v-app-bar>
+
+    <v-navigation-drawer
+      v-model="drawer"
+      absolute
+      temporary
+    >
+      <v-list
+        nav
+        dense
+      >
+        <v-list-item-group
+        >
+          <v-list-item>
+            <v-btn
+              text
+              to="/admin"
+            >
+              <span class="mr-1">Admin</span>
+              <v-icon>mdi-account</v-icon> 
+            </v-btn>
+          </v-list-item>
+
+          <v-list-item>
+            <v-btn
+              text
+              @click="logout"
+            >
+              <span class="mr-1">{{ !!currentUser ? 'Cerrar Sesión' : 'Iniciar Sesión' }}</span>
+              <v-icon>mdi-lock</v-icon>
+            </v-btn>
+          </v-list-item>
+
+          <v-list-item>
+            <v-btn
+              text
+              to="/home"
+            >
+              <span class="mr-1">Home</span>
+              <v-icon>mdi-home</v-icon>
+            </v-btn>
+          </v-list-item>
+        </v-list-item-group>
+      </v-list>
+    </v-navigation-drawer>
   </div>
 </template>
 
@@ -31,6 +60,9 @@
 import Firebase from 'firebase'
 import { mapState, mapActions } from 'vuex'
 export default {
+  data: () => ({
+    drawer: false,
+  }),
   methods: {
     ...mapActions(['setCurrentUser']),
     logout() {
