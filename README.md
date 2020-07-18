@@ -2,7 +2,7 @@
 
 ## Project Description
 
-This work is about a page that sells japanese animation products. Its functionality is based on **Vue.js**, along with other components such as **Vue Router, VUEX, Firebase, and CSS style framework called Vuetify.**
+This work is about a page that old images of iconic places in Santiago. Its functionality is based on **Vue.js**, along with other components such as **Vue Router, VUEX, Firebase, and CSS style framework called Vuetify.**
 
 To see other projects, you can go to the link https://github.com/Marifuse
 

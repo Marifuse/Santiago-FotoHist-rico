@@ -87,5 +87,4 @@ export default {
 .nav__a:hover {
   color: rgb(185, 185, 185) !important;
 }
-
 </style>
